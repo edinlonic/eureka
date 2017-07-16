@@ -1,0 +1,290 @@
+<div id="header">
+  <div class="header-upper grey-color">
+      <br>
+      <br>
+    <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .flex-first or/and .flex-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+    <div class="header-inner container">
+      <!--user menu-->
+      <div class="header-block-flex flex-first mr-auto">
+        <!--language menu-->
+        <a title="English" (click)='switchToEnglish()' class="language-button text-xs p-1"><i class="flag-icon flag-icon-gb"></i></a>
+        <div class="header-divider header-divider-sm"></div>
+        <a title="Bosnian" (click)='switchToBalkan()' class="language-button text-xs p-1"><i class="flag-icon flag-icon-ba"></i></a>
+        <div class="header-divider header-divider-sm"></div>
+        <a title="Serbian" (click)='switchToBalkan()' class="language-button text-xs p-1"><i class="flag-icon flag-icon-rs"></i></a>
+        <div class="header-divider header-divider-sm"></div>
+        <a title="Croatian" (click)='switchToBalkan()' class="language-button text-xs p-1"><i class="flag-icon flag-icon-hr"></i></a>
+      </div>
+      <!--social media icons-->
+      <div class="nav nav-icons header-block flex-last">
+        <!--@todo: replace with company social media details-->
+        <a href="https://www.facebook.com"> <span class='social-media-text'> {{facebookLink}}</span>
+          <i class="social-media-icon fa fa-facebook-square icon-1x"></i> <span class="sr-only"></span> </a>
+      </div>
+
+    </div>
+    
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <img height="200px" src="assets/img/logo.png" alt="Our logo image">
+      </div>
+      <div class="col-md-10">
+        <!--Header & Branding region-->
+        <div class="header" style="padding: 15px 0">
+          <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .flex-first or/and .flex-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header-brand flex-first">
+                <div class="header-slogan hidden-md-down header-style">{{headerTitle}}</div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="header-block flex-last">
+                <a href="#top" class="btn btn-link btn-icon header-btn float-right hidden-lg-up" data-toggle="jpanel-menu" data-target=".navbar-main"
+                  data-direction="right"> <i class="fa fa-bars"></i> </a>
+              </div>
+              <div class="navbar navbar-toggleable-md">
+                <!--everything within this div is collapsed on mobile-->
+                <div class="navbar-main collapse pull-right">
+                  <!--main navigation-->
+                  <ul class="nav navbar-nav float-lg-right dropdown-effect-fade">
+
+                    <li class="nav-item">
+                      <a [routerLink]="['home']" class="nav-link nav-button" id="more-drop"><i class="fa fa-home nav-icon"></i> {{home}}</a>
+                    </li>
+                    <li class="nav-item">
+                      <a [routerLink]="['ta']" class="nav-link nav-button" id="more-drop"><i class="fa fa-file nav-icon" aria-hidden="true"></i> {{whatIs}}</a>
+                    </li>
+                    <li class="nav-item">
+                      <a [routerLink]="['about']" class="nav-link nav-button" id="more-drop"><i class="fa fa-paperclip nav-icon" aria-hidden="true"></i>  {{whoAreWe}}</a>
+                    </li>
+                    <li class="nav-item">
+                      <a [routerLink]="['contact']" class="nav-link nav-button" id="more-drop"><i class="fa fa-phone-square nav-icon" aria-hidden="true"></i>  {{contact}}</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/.navbar-collapse -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3">
+  </div>
+  <div class="col-lg-6">
+    <div id="main-content">
+      <router-outlet>
+
+      </router-outlet>
+    </div>
+
+  </div>
+  <div class="col-lg-3">
+  </div>
+</div>
+
+<div id="features" class="container py-4 py-lg-6">
+  <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+  <h2 class="text-center text-uppercase font-weight-bold my-0">
+    {{whoAreWe}}
+  </h2>
+  <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+    Some text here
+  </h5>
+  <hr class="mb-5 w-50 mx-auto" />
+  <div class="row text-center">
+    <div class="col-lg-4 py-2">
+      <a class="bio-link">
+        <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+        <h4 class="mt-2">
+          Ime i Prezime
+        </h4>
+        <p>Dignissim gemino ibidem importunus mauris olim. Exputo ille ludus modo neo pagus secundum suscipit wisi.</p>
+      </a>
+    </div>
+
+    <div class="col-lg-4 py-2">
+      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <h4 class="mt-2">
+        Ime i Prezime
+      </h4>
+      <p>Ad decet interdico jumentum loquor nobis olim paulatim praemitto.</p>
+    </div>
+    <div class="col-lg-4 py-2">
+      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <h4 class="mt-2">
+        Ime i Prezime
+      </h4>
+      <p>Aliquam aliquip camur causa iaceo premo probo quae quidem tego.</p>
+    </div>
+
+    <div class="col-lg-4 py-2">
+      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <h4 class="mt-2">
+        Ime i Prezime
+      </h4>
+      <p>Antehabeo appellatio eum facilisis inhibeo oppeto qui quis singularis virtus.</p>
+    </div>
+
+    <div class="col-lg-4 py-2">
+      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <h4 class="mt-2">
+        Ime i Prezime
+      </h4>
+      <p>Abbas loquor molior olim pagus qui sed similis tincidunt.</p>
+    </div>
+    <div class="col-lg-4 py-2">
+      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <h4 class="mt-2">
+        Ime i Prezime
+      </h4>
+      <p>Amet diam ille venio. Acsi adipiscing autem nisl veniam.</p>
+    </div>
+    <div class="col-lg-4 py-2">
+      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <h4 class="mt-2">
+        Ime i Prezime
+      </h4>
+      <p>Antehabeo appellatio eum facilisis inhibeo oppeto qui quis singularis virtus.</p>
+    </div>
+    <div class="col-lg-4 py-2">
+      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <h4 class="mt-2">
+        Ime i Prezime
+      </h4>
+      <p>Abbas loquor molior olim pagus qui sed similis tincidunt.</p>
+    </div>
+    <div class="col-lg-4 py-2">
+      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <h4 class="mt-2">
+        Ime i Prezime
+      </h4>
+      <p>Amet diam ille venio. Acsi adipiscing autem nisl veniam.</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="testimonials" class="p-3 py-lg-6 bg-inverse">
+  <div class="container">
+    <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+    <h2 class="text-white text-center text-uppercase font-weight-bold my-0">
+      Citati poznatih filozofa
+    </h2>
+    <h5 class="text-center font-weight-light mt-2 mb-0 text-grey">
+      mozda neki tekst ovdje opcionalno
+    </h5>
+    <hr class="mb-5 w-50 mx-auto" />
+    <div class="row">
+      <div class="col-md-4 d-md-flex">
+        <blockquote class="blockquote-bubble blockquote-center">
+          <p class="blockquote-bubble-content bg-white">"It's totally awesome, we're could imagine life without it!"</p>
+          <small class="text-grey">
+                  <img src="assets/img/team/jimi.jpg" alt="Jimi Bloggs" class="rounded-circle mr-2" />
+                  Jimi Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">@mrjimi</a>
+                </small>
+        </blockquote>
+      </div>
+      <div class="col-md-4 d-md-flex">
+        <blockquote class="blockquote-bubble blockquote-center">
+          <p class="blockquote-bubble-content bg-white text-center">"10 out of 10, highly recommended!"</p>
+          <small class="text-grey">
+                  <img src="assets/img/team/steve.jpg" alt="Jimi Bloggs" class="rounded-circle mr-2" />
+                  Steve Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">Founder of Apple</a>
+                </small>
+        </blockquote>
+      </div>
+      <div class="col-md-4 d-md-flex">
+        <blockquote class="blockquote-bubble blockquote-center">
+          <p class="blockquote-bubble-content bg-white text-center">"Our productivity & sales are up! Couldn't be happier with this product!"</p>
+          <small class="text-grey">
+                  <img src="assets/img/team/adele.jpg" alt="Adele Bloggs" class="rounded-circle mr-2" />
+                  Adele Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">@iamadele</a>
+                </small>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="content-below grey-color">
+  <!-- Awesome features call to action -->
+  <div class="grey-color text-white py-4">
+    <div class="container">
+      <div class="row text-center text-lg-left">
+        <div class="col-12 col-lg-7 py-2">
+          <h2 class="text-uppercase font-weight-bold mt-0 mb-2">
+            <span class="text-primary-darkend">Neki</span> <span class="text-primary-darkend">Tekst</span>
+          </h2>
+          <h5 class="text-primary-darkend">
+            99.9% Uptime <span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Free Upgrades <span class="text-primary-darkend font-weight-bold px-lg-1">/</span>            Fully Responsive <span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Bug Free
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="footer" class="p-0">
+  <div class="container pt-6 pb-5">
+    <div class="row">
+      <div class="col-md-4">
+        <!--@todo: replace with company contact details-->
+        <h4 class="text-uppercase text-white">
+          Contact Us
+        </h4>
+        <address>
+          <ul class="list-unstyled">
+            <li>
+              <abbr title="Phone"><i class="fa fa-phone fa-fw"></i></abbr> 019223 8092344
+            </li>
+            <li>
+              <abbr title="Email"><i class="fa fa-envelope fa-fw"></i></abbr> info@appstraptheme.com
+            </li>
+            <li>
+              <abbr title="Address"><i class="fa fa-home fa-fw"></i></abbr> Sunshine House, Sunville. SUN12 8LU.
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="col-md-4">
+        <h4 class="text-uppercase text-white">
+          About Us
+        </h4>
+        <p>Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
+      </div>
+
+      <div class="col-md-4">
+        <h4 class="text-uppercase text-white">
+          Newsletter
+        </h4>
+        <p>Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
+        <!--@todo: replace with mailchimp code-->
+      </div>
+    </div>
+
+  </div>
+  <hr class="my-0 hr-blank op-2" />
+  <!--@todo: replace with company copyright details-->
+  <div class="bg-inverse-dark text-sm py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">Created by <a href="#" class="footer-link">Edin Lonic</a> | Copyright 2017 &copy; All rights reserved</p>
+        </div>
+        <div class="col-md-6">
+        </div>
+      </div>
+      <a href="#top" class="btn btn-icon btn-inverse pos-fixed pos-b pos-r mr-3 mb-3 scroll-state-hidden hidden-md-down" title="Back to top"
+        data-scroll="scroll-state"><i class="fa fa-chevron-up"></i></a>
+    </div>
+  </div>
+</footer>
