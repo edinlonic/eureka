@@ -9,8 +9,9 @@ import {Image} from './image.interface';
   selector: 'css-carousel',
   //Template for the tag
   template: `
- <div class="carousel">
-  <ul class="slides">
+
+ <div class="carousel" style="max-height: 400px; max-width: 750px; display:block; margin:auto">
+  <ul class="slides" style="heigth:200px">
     <li *ngFor="let image of images">
       <img src="{{image.url}}" alt="">
     </li>
@@ -78,10 +79,10 @@ var IMAGES: Image[] = [
     { "title": "slider3", "url": "./assets/carousel-images/slide3.jpg" },
     { "title": "slider4", "url": "./assets/carousel-images/slide4.jpg" },
     { "title": "slider5", "url": "./assets/carousel-images/slide5.jpg" },
+    { "title": "slider6", "url": "./assets/carousel-images/slide6.jpg" },
+    { "title": "slider7", "url": "./assets/carousel-images/slide7.jpg" },
     { "title": "slider8", "url": "./assets/carousel-images/slide8.jpg" },
     { "title": "slider9", "url": "./assets/carousel-images/slide9.jpg" },
     { "title": "slider10", "url": "./assets/carousel-images/slide10.jpg" },
-    { "title": "slider11", "url": "./assets/carousel-images/slide11.jpg" },
-    { "title": "slider11", "url": "./assets/carousel-images/slide11.jpg" },
    
 ];
