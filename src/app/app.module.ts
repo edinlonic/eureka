@@ -20,7 +20,7 @@ import { MarijaComponent } from './pages/biographies/marija/marija.component';
 import { NaidaComponent } from './pages/biographies/naida/naida.component';
 import { IlvanaComponent } from './pages/biographies/ilvana/ilvana.component';
 import { LjiljanaComponent } from './pages/biographies/ljiljana/ljiljana.component';
-
+import { CSSCarouselComponent }  from './carousel.component';
 
 
 
@@ -28,7 +28,8 @@ import { LjiljanaComponent } from './pages/biographies/ljiljana/ljiljana.compone
   declarations: [
     AppComponent, HomeComponent, AboutComponent, ContactComponent,TaComponent,
     IlvanaComponent,AljosaComponent, AmelaComponent, JasminaComponent,
-    KlaudijaComponent, MajaComponent, MarijaComponent, NaidaComponent,LjiljanaComponent
+    KlaudijaComponent, MajaComponent, MarijaComponent, NaidaComponent,LjiljanaComponent,
+    CSSCarouselComponent
   ],
   imports: [
     BrowserModule,

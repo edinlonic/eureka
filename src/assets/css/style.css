@@ -174,10 +174,15 @@ html[xmlns] .slides {display: block;}
 }
 .bio-link{
     transition: all .2s ease-in-out;
+    text-decoration: none;
+    color:black;
+    display: block !important;
 }
 .bio-link:hover{
-cursor: pointer;
- transform: scale(1.1);
+cursor: pointer !important;
+    text-decoration: none !important;
+    color:black !important;
+ transform: scale(1.1) !important;
 }
 .language-button{
 cursor: pointer;
@@ -219,4 +224,12 @@ font-size: 15px;
 .grey-color
 {
     background: #e5e6e8 !important;
+}
+.thumbnail-pics img
+{
+    border-radius: 50%;
+}
+.thumbnail-pics img:hover
+{
+    opacity: 0.7;
 }

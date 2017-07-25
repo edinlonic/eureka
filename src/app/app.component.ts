@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Globals } from '../app/globals';
 import { RouterModule, Router } from '@angular/router';
+declare var $:any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,6 +16,14 @@ export class AppComponent {
   contact = "";
   facebookLink = "";
   headerTitle = "";
+
+ngAfterViewInit(){
+           $(document).ready(function(){
+             $(".bio-link").click(function(){
+             window.scrollTo(0,0);
+             });
+           });
+     }
 
 
   constructor(private globals: Globals, private _router: Router) {

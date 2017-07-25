@@ -18,7 +18,7 @@
       <!--social media icons-->
       <div class="nav nav-icons header-block flex-last">
         <!--@todo: replace with company social media details-->
-        <a href="https://www.facebook.com"> <span class='social-media-text'> {{facebookLink}}</span>
+        <a href="https://www.facebook.com/Psihoterapija-i-savjetovanje-Eureka-639296862937268/?fref=ts"> <span class='social-media-text'> {{facebookLink}}</span>
           <i class="social-media-icon fa fa-facebook-square icon-1x"></i> <span class="sr-only"></span> </a>
       </div>
 
@@ -33,7 +33,6 @@
       <div class="col-md-10">
         <!--Header & Branding region-->
         <div class="header" style="padding: 15px 0">
-          <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .flex-first or/and .flex-last classes to make an element show first or last within .header-inner or .headr-block elements -->
           <div class="row">
             <div class="col-md-12">
               <div class="header-brand flex-first">
@@ -76,9 +75,9 @@
 </div>
 
 <div class="row">
-  <div class="col-lg-3">
+  <div class="col-lg-2">
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-8">
     <div id="main-content">
       <router-outlet>
 
@@ -86,7 +85,7 @@
     </div>
 
   </div>
-  <div class="col-lg-3">
+  <div class="col-lg-2">
   </div>
 </div>
 
@@ -99,74 +98,91 @@
     Some text here
   </h5>
   <hr class="mb-5 w-50 mx-auto" />
-  <div class="row text-center">
+  <div class="row text-center thumbnail-pics">
     <div class="col-lg-4 py-2">
-      <a class="bio-link">
-        <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <a [routerLink]="['aljosa']" class="bio-link">
+        <img width="100px" src="assets/img/personal-images/aljosa.png" />
         <h4 class="mt-2">
-          Ime i Prezime
+          Aljoša Lješić
         </h4>
         <p>Dignissim gemino ibidem importunus mauris olim. Exputo ille ludus modo neo pagus secundum suscipit wisi.</p>
       </a>
     </div>
 
     <div class="col-lg-4 py-2">
-      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <a [routerLink]="['amela']" class="bio-link">
+      <img width="100px" src="assets/img/personal-images/amela.png" />
       <h4 class="mt-2">
-        Ime i Prezime
+        Amela Karkelja
       </h4>
       <p>Ad decet interdico jumentum loquor nobis olim paulatim praemitto.</p>
+      </a>
     </div>
+
     <div class="col-lg-4 py-2">
-      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <a [routerLink]="['ilvana']" class="bio-link">
+      <img width="100px" src="assets/img/personal-images/ilvana.png" />
       <h4 class="mt-2">
-        Ime i Prezime
+        Ilvana Lonić
       </h4>
       <p>Aliquam aliquip camur causa iaceo premo probo quae quidem tego.</p>
+      </a>
     </div>
 
     <div class="col-lg-4 py-2">
-      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <a [routerLink]="['jasmina']" class="bio-link">
+      <img width="100px" src="assets/img/personal-images/jasmina.png" />
       <h4 class="mt-2">
-        Ime i Prezime
+        Jasmina Mihojević
       </h4>
       <p>Antehabeo appellatio eum facilisis inhibeo oppeto qui quis singularis virtus.</p>
+      </a>
     </div>
 
     <div class="col-lg-4 py-2">
-      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <a [routerLink]="['klaudija']" class="bio-link">
+      <img width="100px" src="assets/img/personal-images/klaudija.png" />
       <h4 class="mt-2">
-        Ime i Prezime
+        Klaudija Ribić
       </h4>
       <p>Abbas loquor molior olim pagus qui sed similis tincidunt.</p>
+      </a>
     </div>
     <div class="col-lg-4 py-2">
-      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <a [routerLink]="['ljiljana']" class="bio-link">
+      <img width="100px" src="assets/img/personal-images/ljiljana.png" />
       <h4 class="mt-2">
-        Ime i Prezime
+        Ljiljana Purković
       </h4>
       <p>Amet diam ille venio. Acsi adipiscing autem nisl veniam.</p>
+      </a>
     </div>
     <div class="col-lg-4 py-2">
-      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <a [routerLink]="['maja']" class="bio-link">
+      <img width="100px" src="assets/img/personal-images/maja.png" />
       <h4 class="mt-2">
-        Ime i Prezime
+        Maja Vujičić
       </h4>
       <p>Antehabeo appellatio eum facilisis inhibeo oppeto qui quis singularis virtus.</p>
+      </a>
     </div>
     <div class="col-lg-4 py-2">
-      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <a [routerLink]="['marija']" class="bio-link">
+      <img width="100px" src="assets/img/personal-images/marija.png" />
       <h4 class="mt-2">
-        Ime i Prezime
+        Marija Džinkić
       </h4>
       <p>Abbas loquor molior olim pagus qui sed similis tincidunt.</p>
+      </a>
     </div>
     <div class="col-lg-4 py-2">
-      <img width="100px" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" />
+      <a [routerLink]="['naida']" class="bio-link">
+      <img width="100px" src="assets/img/personal-images/naida.png" />
       <h4 class="mt-2">
-        Ime i Prezime
+        Naida Pervan
       </h4>
       <p>Amet diam ille venio. Acsi adipiscing autem nisl veniam.</p>
+      </a>
     </div>
 
   </div>
@@ -185,28 +201,28 @@
     <div class="row">
       <div class="col-md-4 d-md-flex">
         <blockquote class="blockquote-bubble blockquote-center">
-          <p class="blockquote-bubble-content bg-white">"It's totally awesome, we're could imagine life without it!"</p>
+          <p class="blockquote-bubble-content bg-white">"Be the change you want to see in this world"</p>
           <small class="text-grey">
-                  <img src="assets/img/team/jimi.jpg" alt="Jimi Bloggs" class="rounded-circle mr-2" />
-                  Jimi Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">@mrjimi</a>
+                  <img src="assets/img/blog/gandi.png" alt="Mahatma Gandhi" class="rounded-circle mr-2" />
+                    Mahatma Gandhi
                 </small>
         </blockquote>
       </div>
       <div class="col-md-4 d-md-flex">
         <blockquote class="blockquote-bubble blockquote-center">
-          <p class="blockquote-bubble-content bg-white text-center">"10 out of 10, highly recommended!"</p>
+          <p class="blockquote-bubble-content bg-white text-center">"He who has a why to live can bear almost any how"</p>
           <small class="text-grey">
-                  <img src="assets/img/team/steve.jpg" alt="Jimi Bloggs" class="rounded-circle mr-2" />
-                  Steve Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">Founder of Apple</a>
+                  <img src="assets/img/blog/nietzche.png" alt="Friedrich Nietzsche" class="rounded-circle mr-2" />
+                  Friedrich Nietzsche
                 </small>
         </blockquote>
       </div>
       <div class="col-md-4 d-md-flex">
         <blockquote class="blockquote-bubble blockquote-center">
-          <p class="blockquote-bubble-content bg-white text-center">"Our productivity & sales are up! Couldn't be happier with this product!"</p>
+          <p class="blockquote-bubble-content bg-white text-center">"A person who never made a mistake never tried anything new"</p>
           <small class="text-grey">
-                  <img src="assets/img/team/adele.jpg" alt="Adele Bloggs" class="rounded-circle mr-2" />
-                  Adele Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">@iamadele</a>
+                  <img src="assets/img/blog/einstein.png" alt="Albert Einstein" class="rounded-circle mr-2" />
+                  Albert Einstein
                 </small>
         </blockquote>
       </div>
@@ -224,7 +240,7 @@
             <span class="text-primary-darkend">Neki</span> <span class="text-primary-darkend">Tekst</span>
           </h2>
           <h5 class="text-primary-darkend">
-            99.9% Uptime <span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Free Upgrades <span class="text-primary-darkend font-weight-bold px-lg-1">/</span>            Fully Responsive <span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Bug Free
+            Lorem Ipsum<span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Lorem Ipsum<span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Lorem Ipsum <span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Lorem Ipsum
           </h5>
         </div>
       </div>
@@ -246,7 +262,7 @@
               <abbr title="Phone"><i class="fa fa-phone fa-fw"></i></abbr> 019223 8092344
             </li>
             <li>
-              <abbr title="Email"><i class="fa fa-envelope fa-fw"></i></abbr> info@appstraptheme.com
+              <abbr title="Email"><i class="fa fa-envelope fa-fw"></i></abbr> info@eureka.com
             </li>
             <li>
               <abbr title="Address"><i class="fa fa-home fa-fw"></i></abbr> Sunshine House, Sunville. SUN12 8LU.
@@ -259,14 +275,14 @@
         <h4 class="text-uppercase text-white">
           About Us
         </h4>
-        <p>Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
       </div>
 
       <div class="col-md-4">
         <h4 class="text-uppercase text-white">
           Newsletter
         </h4>
-        <p>Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
         <!--@todo: replace with mailchimp code-->
       </div>
     </div>
