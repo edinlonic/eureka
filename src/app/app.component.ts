@@ -18,15 +18,13 @@ export class AppComponent {
   headerTitle = "";
   services = "";
 
-ngAfterViewInit(){
-           $(document).ready(function(){
-             $(".bio-link").click(function(){
-             window.scrollTo(0,0);
-             });
-           });
-     }
-
-
+  ngAfterViewInit() {
+    $(document).ready(function () {
+      $(".bio-link, .contact-redirect").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+      });
+    });
+  }
   constructor(private globals: Globals, private _router: Router) {
     this.home = 'Početna';
     this.whatIs = 'Šta je TA?';
