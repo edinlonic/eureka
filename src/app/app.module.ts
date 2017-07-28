@@ -21,6 +21,8 @@ import { NaidaComponent } from './pages/biographies/naida/naida.component';
 import { IlvanaComponent } from './pages/biographies/ilvana/ilvana.component';
 import { LjiljanaComponent } from './pages/biographies/ljiljana/ljiljana.component';
 import { CSSCarouselComponent }  from './carousel.component';
+import { ServicesComponent }  from './pages/services/services.component';
+
 
 
 
@@ -29,7 +31,7 @@ import { CSSCarouselComponent }  from './carousel.component';
     AppComponent, HomeComponent, AboutComponent, ContactComponent,TaComponent,
     IlvanaComponent,AljosaComponent, AmelaComponent, JasminaComponent,
     KlaudijaComponent, MajaComponent, MarijaComponent, NaidaComponent,LjiljanaComponent,
-    CSSCarouselComponent
+    CSSCarouselComponent, ServicesComponent
   ],
   imports: [
     BrowserModule,

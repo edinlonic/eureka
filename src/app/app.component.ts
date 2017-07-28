@@ -16,6 +16,7 @@ export class AppComponent {
   contact = "";
   facebookLink = "";
   headerTitle = "";
+  services = "";
 
 ngAfterViewInit(){
            $(document).ready(function(){
@@ -32,6 +33,7 @@ ngAfterViewInit(){
     this.whoAreWe = 'Ko smo mi?';
     this.contact = "Kontakt";
     this.facebookLink = "Posjeti nas na fejsu";
+    this.services = "Usluge savjetovališta"
     this.headerTitle = "Savjetovanje i psihoterapija ''EUREKA''";
     this.router = _router;
   }
@@ -42,6 +44,7 @@ ngAfterViewInit(){
     this.whatIs = 'Šta je TA?';
     this.whoAreWe = 'Ko smo mi?';
     this.contact = "Kontakt";
+    this.services = "Usluge savjetovališta"
     this.facebookLink = "Posjeti nas na fejsu";
     this.headerTitle = "Savjetovanje i psihoterapija ''EUREKA''";
     this.router.navigateByUrl("");
@@ -52,6 +55,7 @@ ngAfterViewInit(){
     this.whatIs = 'What is TA?';
     this.whoAreWe = 'Who are we?';
     this.contact = "Contact";
+    this.services = "Usluge savjetovališta"
     this.facebookLink = "Visit us on facebook";
     this.headerTitle = "Counseling and psychotherapy ''EUREKA''";
     this.router.navigateByUrl("");

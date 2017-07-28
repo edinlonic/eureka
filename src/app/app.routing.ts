@@ -13,6 +13,7 @@ import { MajaComponent } from './pages/biographies/maja/maja.component';
 import { MarijaComponent } from './pages/biographies/marija/marija.component';
 import { NaidaComponent } from './pages/biographies/naida/naida.component';
 import { LjiljanaComponent } from './pages/biographies/ljiljana/ljiljana.component';
+import { ServicesComponent }  from './pages/services/services.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -29,6 +30,8 @@ const routes: Routes = [
     { path: 'marija', component: MarijaComponent },
     { path: 'naida', component: NaidaComponent },
     { path: 'ljiljana', component: LjiljanaComponent },
+    { path: 'services', component: ServicesComponent },
+    
 
 ];
 

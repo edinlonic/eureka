@@ -62,6 +62,9 @@
                     <li class="nav-item">
                       <a [routerLink]="['contact']" class="nav-link nav-button" id="more-drop"><i class="fa fa-phone-square nav-icon" aria-hidden="true"></i>  {{contact}}</a>
                     </li>
+                    <li class="nav-item">
+                      <a [routerLink]="['services']" class="nav-link nav-button" id="more-drop"><i class="fa fa-phone-square nav-icon" aria-hidden="true"></i>  {{services}}</a>
+                    </li>
                   </ul>
                 </div>
                 <!--/.navbar-collapse -->
@@ -93,9 +96,7 @@
   <h2 class="text-center text-uppercase font-weight-bold my-0">
     {{whoAreWe}}
   </h2>
-  <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
-    Some text here
-  </h5>
+
   <hr class="mb-5 w-50 mx-auto" />
   <div class="row text-center thumbnail-pics">
     <div class="col-lg-4 py-2">
@@ -104,7 +105,7 @@
       <h4 class="mt-2">
         Naida Pervan
       </h4>
-      <p>Amet diam ille venio. Acsi adipiscing autem nisl veniam.</p>
+      <p>mg. psihologije, transakciono-analitički praktičar</p>
       </a>
     </div>
     <div class="col-lg-4 py-2">
@@ -113,7 +114,7 @@
       <h4 class="mt-2">
         Ilvana Lonić
       </h4>
-      <p>Aliquam aliquip camur causa iaceo premo probo quae quidem tego.</p>
+      <p>apsolventica master studija psihologije, transakciono-analitički praktičar</p>
       </a>
     </div>
     <div class="col-lg-4 py-2">
@@ -122,7 +123,7 @@
         <h4 class="mt-2">
           Aljoša Lješić
         </h4>
-        <p>Dignissim gemino ibidem importunus mauris olim. Exputo ille ludus modo neo pagus secundum suscipit wisi.</p>
+        <p>bachelor psihologije, transakciono-analitički praktičar</p>
       </a>
     </div>
     <div class="col-lg-4 py-2">
@@ -131,7 +132,7 @@
       <h4 class="mt-2">
         Maja Vujičić
       </h4>
-      <p>Antehabeo appellatio eum facilisis inhibeo oppeto qui quis singularis virtus.</p>
+      <p>psihologinja, transakciono-analitički praktičar</p>
       </a>
     </div>
     <div class="col-lg-4 py-2">
@@ -140,7 +141,7 @@
       <h4 class="mt-2">
         Jasmina Mihojević
       </h4>
-      <p>Antehabeo appellatio eum facilisis inhibeo oppeto qui quis singularis virtus.</p>
+      <p>mg. psihologije, transakciono-analitički praktičar</p>
       </a>
     </div>
     <div class="col-lg-4 py-2">
@@ -149,7 +150,7 @@
       <h4 class="mt-2">
         Amela Karkelja
       </h4>
-      <p>Ad decet interdico jumentum loquor nobis olim paulatim praemitto.</p>
+      <p>mg. psihologije, transakciono-analitički praktičar</p>
       </a>
     </div>
     <div class="col-lg-4 py-2">
@@ -158,7 +159,7 @@
       <h4 class="mt-2">
         Marija Džinkić
       </h4>
-      <p>Abbas loquor molior olim pagus qui sed similis tincidunt.</p>
+      <p>mg psihologije, transakciono-analitički praktičar</p>
       </a>
     </div>
     <div class="col-lg-4 py-2">
@@ -167,7 +168,7 @@
       <h4 class="mt-2">
         Klaudija Ribić
       </h4>
-      <p>Abbas loquor molior olim pagus qui sed similis tincidunt.</p>
+      <p>psihologinja, didaktički analitičar </p>
       </a>
     </div>
     <div class="col-lg-4 py-2">
@@ -176,7 +177,7 @@
       <h4 class="mt-2">
         Ljiljana Purković
       </h4>
-      <p>Amet diam ille venio. Acsi adipiscing autem nisl veniam.</p>
+      <p>pedagoginja, transakciono-analitički praktičar</p>
       </a>
     </div>
   </div>
@@ -188,32 +189,29 @@
     <h2 class="text-white text-center text-uppercase font-weight-bold my-0">
       Citati poznatih filozofa
     </h2>
-    <h5 class="text-center font-weight-light mt-2 mb-0 text-grey">
-      mozda neki tekst ovdje opcionalno
-    </h5>
     <hr class="mb-5 w-50 mx-auto" />
     <div class="row">
       <div class="col-md-4 d-md-flex">
         <blockquote class="blockquote-bubble blockquote-center">
-          <p class="blockquote-bubble-content bg-white">"Be the change you want to see in this world"</p>
+          <p class="blockquote-bubble-content bg-white">"Being entirely honest with oneself is a good exercise."</p>
           <small class="text-grey">
-                  <img src="assets/img/blog/gandi.png" alt="Mahatma Gandhi" class="rounded-circle mr-2" />
-                    Mahatma Gandhi
+                  <img src="assets/img/blog/freud.jpg" alt="Sigmund Freud" class="rounded-circle mr-2" />
+                    Sigmund Freud
                 </small>
         </blockquote>
       </div>
       <div class="col-md-4 d-md-flex">
         <blockquote class="blockquote-bubble blockquote-center">
-          <p class="blockquote-bubble-content bg-white text-center">"He who has a why to live can bear almost any how"</p>
+          <p class="blockquote-bubble-content bg-white text-center">"He who has a why to live can bear almost any how."</p>
           <small class="text-grey">
-                  <img src="assets/img/blog/nietzche.png" alt="Friedrich Nietzsche" class="rounded-circle mr-2" />
+                  <img src="assets/img/blog/nietzche.jpg" alt="Friedrich Nietzsche" class="rounded-circle mr-2" />
                   Friedrich Nietzsche
                 </small>
         </blockquote>
       </div>
       <div class="col-md-4 d-md-flex">
         <blockquote class="blockquote-bubble blockquote-center">
-          <p class="blockquote-bubble-content bg-white text-center">"A person who never made a mistake never tried anything new"</p>
+          <p class="blockquote-bubble-content bg-white text-center">"A person who never made a mistake never tried anything new."</p>
           <small class="text-grey">
                   <img src="assets/img/blog/einstein.png" alt="Albert Einstein" class="rounded-circle mr-2" />
                   Albert Einstein
@@ -229,13 +227,10 @@
   <div class="grey-color text-white py-4">
     <div class="container">
       <div class="row text-center text-lg-left">
-        <div class="col-12 col-lg-7 py-2">
+        <div class="col-12 py-2">
           <h2 class="text-uppercase font-weight-bold mt-0 mb-2">
-            <span class="text-primary-darkend">Neki</span> <span class="text-primary-darkend">Tekst</span>
+            <span class="text-primary-darkend">Personal development is the conscious choice to improve one's life to become a better person and to grow as an individual</span>
           </h2>
-          <h5 class="text-primary-darkend">
-            Lorem Ipsum<span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Lorem Ipsum<span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Lorem Ipsum <span class="text-primary-darkend font-weight-bold px-lg-1">/</span> Lorem Ipsum
-          </h5>
         </div>
       </div>
     </div>
